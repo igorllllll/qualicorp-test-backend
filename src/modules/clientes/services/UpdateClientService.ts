@@ -4,7 +4,7 @@ import AppError from '../../../shared/errors/AppError';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 
 import IClientsRepository from '../repositories/IClientsRepository';
-import Client from '@modules/clientes/infra/typeorm/entities/Client';
+import Client from '../infra/typeorm/entities/Client';
 
 interface IRequest {
     id_client: string;

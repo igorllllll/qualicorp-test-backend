@@ -1,10 +1,11 @@
 
 import { hash } from 'bcryptjs';
-import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
 import { inject, injectable } from 'tsyringe';
 
 import IClientsRepository from '../repositories/IClientsRepository';
-import Client from '@modules/clientes/infra/typeorm/entities/Client';
+import Client from '../infra/typeorm/entities/Client';
+
 
 
 interface IRequest {

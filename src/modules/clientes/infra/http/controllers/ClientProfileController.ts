@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
-import { classToClass } from 'class-transformer';
 
-import DeleteClientSevice from '@modules/clientes/services/DeleteClientSevice';
-import UpdateClientService from '@modules/clientes/services/UpdateClientService';
+
+import DeleteClientSevice from '../../../services/DeleteClientSevice';
+import UpdateClientService from '../../../services/UpdateClientService';
 
 
 export default class UpdateClientController {
@@ -40,6 +40,6 @@ export default class UpdateClientController {
             password
         });
 
-        return response.json(classToClass(client));
+        return response.json(client);
     }
 }

@@ -1,14 +1,13 @@
 
-import path from 'path';
-import fs from 'fs';
+
 import { inject, injectable } from 'tsyringe';
 
-import AppError from '@shared/errors/AppError';
-import uploadConfig from '@config/upload';
+import AppError from '../../../shared/errors/AppError';
+
 
 import IClientsRepository from '../repositories/IClientsRepository';
 import IStorageProvider from '../../../shared/container/providers/StorageProvider/models/IStorageProvider';
-import Client from '@modules/clientes/infra/typeorm/entities/Client';
+import Client from '../infra/typeorm/entities/Client';
 
 
 interface IRequest{

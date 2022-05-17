@@ -6,13 +6,14 @@
   "scripts": {
     "build": "tsc",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "start": "ts-node src/shared/infra/http/server.ts",
+    "start": "ts-node dist/shared/infra/http/server",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "@types/cors": "^2.8.12",
     "@types/mime": "^2.0.3",
     "@types/mongodb": "^4.0.7",
+    "@types/node": "^17.0.34",
     "aws-sdk": "^2.1018.0",
     "bcryptjs": "^2.4.3",
     "celebrate": "^15.0.0",
@@ -24,9 +25,12 @@
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^8.5.1",
     "mime": "^2.5.2",
+    "module-not-found-error": "^1.0.1",
     "mongodb": "^4.6.0",
     "pg": "^8.7.1",
+    "react-scripts": "^5.0.1",
     "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.7.0",
     "tsyringe": "^4.6.0",
     "typeorm": "^0.2.37"
   },
@@ -49,6 +53,6 @@
     "prettier": "^2.3.2",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.11.0",
-    "typescript": "^4.3.5"
+    "typescript": "^4.6.4"
   }
 }

@@ -6,7 +6,7 @@ import { container } from 'tsyringe';
 import ClientController from '../controllers/ClientController';
 import ClientAvatarController from '../controllers/ClientAvatarController';
 
-import ensureAuthenticated from '@modules/clientes/infra/http/middleware/ensureAuthenticated';
+import ensureAuthenticated from '../../http/middleware/ensureAuthenticated';
 
 
 

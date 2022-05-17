@@ -1,9 +1,9 @@
 import { inject, injectable } from 'tsyringe';
-import AppError from '../../../shared/errors/AppError';
+
 
 
 import IClientsRepository from '../repositories/IClientsRepository';
-import Client from '@modules/clientes/infra/typeorm/entities/Client';
+
 
 
 

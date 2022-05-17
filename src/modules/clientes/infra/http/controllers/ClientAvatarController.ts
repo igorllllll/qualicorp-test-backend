@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
-import { classToClass } from 'class-transformer';
 
-import UpdateAvatarClientService from '@modules/clientes/services/UpdateAvatarClientService';
+
+import UpdateAvatarClientService from '../../../services/UpdateAvatarClientService';
 
 
 export default class ClientAvatarController {
@@ -11,10 +11,10 @@ export default class ClientAvatarController {
 
         const client = await updateAvatarClient.execute({
             id_client: request.user.id,
-            avatarFilename: request.file.filename
+            avatarFilename: request.file!.filename
         });
 
-        return response.json(classToClass(client));
+        return response.json(client);
 
     }
 }

@@ -1,8 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import CreateClientService from '@modules/clientes/services/CreateClientService';
-import UpdateClientService from '@modules/clientes/services/UpdateClientService';
+import CreateClientService from '../../../services/CreateClientService';
 
 
 export default class SolicitantesController {
