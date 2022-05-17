@@ -56,7 +56,6 @@
     // "rootDirs": [],                              /* List of root folders whose combined content represents the structure of the project at runtime. */
     "typeRoots": [
         "./src/@types",
-        "./custom_typings",
         "./@types",
         "./node_modules/@types"
     ],                             /* List of folders to include type definitions from. */

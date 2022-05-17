@@ -1,7 +1,6 @@
 import { request, response, Router } from 'express';
 import multer from 'multer';
 import uploadConfig from '../../../../../config/upload';
-import { container } from 'tsyringe';
 
 import ClientController from '../controllers/ClientController';
 import ClientAvatarController from '../controllers/ClientAvatarController';

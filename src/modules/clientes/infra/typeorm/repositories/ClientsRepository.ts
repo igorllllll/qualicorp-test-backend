@@ -6,9 +6,6 @@ import ICreateClientDTO from '../../../dtos/ICreateClientDTO';
 
 import Client from '../entities/Client';
 
-
-
-
 class ClientRepository implements IClientsRepository {
     private ormRepository: Repository<Client>;
 

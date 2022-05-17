@@ -5,8 +5,6 @@ import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateCol
 import { Exclude, Expose } from 'class-transformer';
 import uploadConfig from '../../../../../config/upload';
 
-
-
 @Entity('clients')
 export default class Clients {
 

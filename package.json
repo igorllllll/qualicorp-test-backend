@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "start": "ts-node dist/shared/infra/http/server",
+    "start": "ts-node dist/shared/infra/http/server.js",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
@@ -27,11 +27,13 @@
     "mime": "^2.5.2",
     "module-not-found-error": "^1.0.1",
     "mongodb": "^4.6.0",
+    "multer": "^1.4.4",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^10.7.0",
     "tsyringe": "^4.6.0",
-    "typeorm": "^0.2.37"
+    "typeorm": "^0.2.37",
+    "typescript": "^4.6.4"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
@@ -48,7 +50,7 @@
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
-    "multer": "^1.4.3",
+    "multer": "^1.4.4",
     "prettier": "^2.3.2",
     "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.11.0",
