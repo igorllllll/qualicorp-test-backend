@@ -28,7 +28,6 @@
     "module-not-found-error": "^1.0.1",
     "mongodb": "^4.6.0",
     "pg": "^8.7.1",
-    "react-scripts": "^5.0.1",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^10.7.0",
     "tsyringe": "^4.6.0",

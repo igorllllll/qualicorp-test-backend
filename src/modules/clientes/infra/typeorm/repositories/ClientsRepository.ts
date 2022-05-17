@@ -54,8 +54,8 @@ class ClientRepository implements IClientsRepository {
         await this.ormRepository.delete(id);
     }
 
-
-
 }
 
 export default ClientRepository;
+
+
